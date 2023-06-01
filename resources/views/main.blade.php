@@ -25,7 +25,7 @@
   </head>
   <body>
     <div class="container-scroller">
-      @include('partials.sidebar');
+      {{-- @include('partials.sidebar'); --}}
       @include('partials.navbar');
       @yield('breadcrumbs')
     </div>

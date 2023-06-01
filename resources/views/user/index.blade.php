@@ -1,4 +1,4 @@
-@extends('main')
+{{-- @extends('main')
 @section('title')
 @section('breadcrumbs')
 
@@ -57,7 +57,71 @@
         </div>
       </div>
     </div>
+</div>--}}
+    
+{{-- @endsection --}} 
+
+
+
+
+
+
+
+@extends('main')
+@section('title')
+@section('breadcrumbs')
+
+<div class="main-panel" >
+    <div class="content-wrapper">
+      {{-- <div class="page-header">
+        <h1 class="page-title"> Welcome to the <strong> TheAcoustic!! </strong></h1>
+      </div> --}}
+
+
+        <div class="page-header">
+          <h3 class="page-title">Ticket Information</h3>
+        </div>
+
+      <div class="row">
+        <div class="col-md-6 grid-margin stretch-card">
+          <div href="{{('./') }}" class="card reg ticket button btn">
+            <div class="card-body">
+
+              <h3>Regular Ticket</h3>
+              <hr><br>
+              <h4>Price Rp 25.000,00</4>
+              <br>
+
+            </div>
+          </div>
+        </div>
+    
+
+        
+          <div class="col-md-6 grid-margin stretch-card">
+              <div class="card vip ticket button btn">
+                <div class="card-body">
+    
+                  <h3>VIP Ticket</h3>
+                  <hr><br>
+                  <h4>Price Rp 50.000,00</h4>
+                  <br>
+
+                  <button class="btn beli"><h5><a class="beli" href="{{ ('user_tiket') }}">Beli Tiket</a></h5></button>
+    
+                </div>
+              </div>
+          </div>
+        
+
+
+
+      </div>
+
+
+
+    </div>
     @include('partials.footer')
-</div>
+  </div>
     
 @endsection

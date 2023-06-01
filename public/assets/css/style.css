@@ -119,6 +119,11 @@
 }
 
 
+.bg1{
+
+}
+
+
 @-moz-keyframes flash {
   0% {
     opacity: 1; }
@@ -7516,7 +7521,9 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-image: url(../images/bgbd.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
@@ -16086,7 +16093,7 @@ code {
 
 /* Footer */
 .footer {
-  background: #000000;
+  background: #00000080;
   color: color(dark);
   padding: 20px 1rem;
   transition: all 0.25s ease;
@@ -16956,6 +16963,33 @@ code {
 /* Cards */
 .card {
   border-radius: 0.25rem; }
+
+.card .rt:hover{
+  background-color: black;
+}
+
+.ticket{
+  /* flex: 0 0 auto;
+  width: 50%;
+  margin-bottom: 1.5rem;
+  display: -webkit-flex;
+  display: flex; */
+  outline: 2px solid white; 
+  box-shadow: 10px 14px 22px 5px rgba(0,0,0,0.45);
+              -webkit-box-shadow: 10px 14px 22px 5px rgba(0,0,0,0.45);
+              -moz-box-shadow: 10px 14px 22px 5px rgba(0,0,0,0.45);
+}
+
+.reg{
+  background-color: #8e5473;
+}
+
+.vip{
+  background-color: #d09f5f
+}
+
+
+
   .card .card-body {
     padding: 1.75rem 1.5625rem; }
     .card .card-body + .card-body {
@@ -20827,7 +20861,7 @@ div.tagsinput {
   position: relative; }
 
 .main-panel {
-  background-image: url("/public/assets/images/");
+  /* background-image: url("../images/bgbd.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   transition: width 0.25s ease, margin 0.25s ease;
@@ -20844,10 +20878,37 @@ div.tagsinput {
       width: 100%; } }
 
 .content-wrapper {
-  background: #000000;
+  /* background: #000000; */
   padding: 1.875rem 1.75rem;
   width: 100%;
   -webkit-flex-grow: 1;
   flex-grow: 1; }
+
+  .tautan, a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .tautan:hover{
+    color: #FF4C29;
+    transition: all 0.3s ease;
+  }
+  
+  .beli{
+    color: transparent;
+    /* position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #191c24;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem; */
+  }
+
+  /* .beli:hover{
+    color: black;
+  } */
 
 /*# sourceMappingURL=maps/style.css.map */
