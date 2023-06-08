@@ -7522,6 +7522,7 @@ body {
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
   background-image: url(../images/bgbd.jpg);
+  /* background-color: #4b3750; */
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-text-size-adjust: 100%;
@@ -20906,6 +20907,14 @@ div.tagsinput {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem; */
   }
+
+  .tic{ text-shadow: 5px 5px 5px rgba(0,0,0,0.65)}
+
+  .page-title{
+    text-shadow: 3px 5px 8px #000000;
+  }
+
+
 
   /* .beli:hover{
     color: black;

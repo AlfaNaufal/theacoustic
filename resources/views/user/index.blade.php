@@ -82,6 +82,18 @@
           <h3 class="page-title">Ticket Information</h3>
         </div>
 
+        <br>
+
+        <div class="col-md-12 grid-margin stretch-card">
+          <div class="card-body text-lg-center">
+
+            <h1 class="tic">Pilih tiket</h1>
+
+          </div>
+        </div>
+
+        <br><br>
+
       <div class="row">
         <div class="col-md-6 grid-margin stretch-card">
           <div href="{{('./') }}" class="card reg ticket button btn">
@@ -90,34 +102,35 @@
               <h3>Regular Ticket</h3>
               <hr><br>
               <h4>Price Rp 25.000,00</4>
-              <br>
+              <br><br><br>
+
+              <a href="{{('./') }}"><button type="button" class="btn btn-secondary btn-fw">Beli</button></a>
 
             </div>
           </div>
         </div>
-    
-
         
-          <div class="col-md-6 grid-margin stretch-card">
-              <div class="card vip ticket button btn">
-                <div class="card-body">
-    
-                  <h3>VIP Ticket</h3>
-                  <hr><br>
-                  <h4>Price Rp 50.000,00</h4>
-                  <br>
+        <div class="col-md-6 grid-margin stretch-card">
+          <div href="{{('./') }}" class="card vip ticket button btn">
+            <div class="card-body">
 
-                  <button class="btn beli"><h5><a class="beli" href="{{ ('user_tiket') }}">Beli Tiket</a></h5></button>
-    
-                </div>
-              </div>
+              <h3>Regular Ticket</h3>
+              <hr><br>
+              <h4>Price Rp 25.000,00</4>
+              <br><br><br>
+
+              <a href="{{('./') }}"><button type="button" class="btn btn-secondary btn-fw">Beli</button></a>
+
+            </div>
           </div>
+        </div>
         
-
-
-
+        
+        
+        
       </div>
-
+      
+      <br><br><br><br>
 
 
     </div>
