@@ -85,9 +85,16 @@
           {{-- <a class="tautan" href="#" >Tiket</a> --}}
           <a class="tautan" href="{{url('user_tiket')}}">Tiket</a>
         </li>
-
-
-
+          @if(auth()->user()->level === 'admin')
+          <li class="nav-item p-3">
+            {{-- <a class="tautan" href="#" >Tiket</a> --}}
+            <a class="tautan" href="{{url('admin_tiket')}}">daftar tiket</a>
+          </li>
+          @endif
+        
+        
+          
+        
         <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
           <h6 class="p-3 mb-0">Notifications</h6>
           <div class="dropdown-divider"></div>

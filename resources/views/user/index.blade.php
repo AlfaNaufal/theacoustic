@@ -78,6 +78,8 @@
       </div> --}}
 
 
+
+
         <div class="page-header">
           <h3 class="page-title">Ticket Information</h3>
         </div>
@@ -95,36 +97,27 @@
         <br><br>
 
       <div class="row">
-        <div class="col-md-6 grid-margin stretch-card">
-          <div href="{{('./') }}" class="card reg ticket button btn">
-            <div class="card-body">
 
-              <h3>Regular Ticket</h3>
+        @foreach($tiket as $tiket)
+        <div class="col-md-6 grid-margin stretch-card">
+        <div href="{{('./') }}" class="card ticket button btn {{ $tiket->jenis_tiket === 'VVIP' ? 'vip' : 'reg' }}" >
+            <div class="card-body" >
+
+              <h3>{{ $tiket->jenis_tiket}}</h3>
               <hr><br>
-              <h4>Price Rp 25.000,00</4>
+              <h4>{{ $tiket->harga }}</4>
               <br><br><br>
 
-              <a href="{{('./') }}"><button type="button" class="btn btn-secondary btn-fw">Beli</button></a>
+              <form action="" method="post">
+                @csrf
+                <input type="hidden" name="id_tiket" value="{{ $tiket->id_tiket }}">
+                <button type="submit" class="btn btn-secondary btn-fw">Beli</button>
+              </form>
 
             </div>
           </div>
-        </div>
-        
-        <div class="col-md-6 grid-margin stretch-card">
-          <div href="{{('./') }}" class="card vip ticket button btn">
-            <div class="card-body">
-
-              <h3>Regular Ticket</h3>
-              <hr><br>
-              <h4>Price Rp 25.000,00</4>
-              <br><br><br>
-
-              <a href="{{('./') }}"><button type="button" class="btn btn-secondary btn-fw">Beli</button></a>
-
-            </div>
-          </div>
-        </div>
-        
+        </div>  
+        @endforeach        
         
         
         
